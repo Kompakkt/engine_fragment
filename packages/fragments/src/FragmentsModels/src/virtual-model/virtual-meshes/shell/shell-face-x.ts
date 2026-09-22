@@ -1,9 +1,8 @@
-import * as THREE from "three";
-import { TileData } from "../types";
+import * as THREE from "../../../../../headless/math";
+import { DataBuffer, TileData } from "../../../../../headless/primitives";
 import { DataSizes, ShellHoleData } from "./types";
 import { earcut } from "../../../utils/geometry/earcut";
-import { DataBuffer } from "../../../model/model-types";
-import { FaceUtils } from "../../../utils";
+import { FaceUtils } from "../../../utils/geometry/face-utils";
 
 export class ShellFaceX {
   private static _tempVec = new THREE.Vector3();

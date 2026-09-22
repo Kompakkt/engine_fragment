@@ -1,4 +1,4 @@
-import { TileData } from "../types";
+import { TileData } from "../../../../../headless/primitives";
 import { DataSizes } from "./types";
 
 export class ShellFace3 {

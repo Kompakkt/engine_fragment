@@ -1,5 +1,5 @@
-import * as THREE from "three";
-import { TileData } from "../types";
+import * as THREE from "../../../../../headless/math";
+import { TileData } from "../../../../../headless/primitives";
 import { DataSizes } from "./types";
 import { ShellFaceX } from "./shell-face-x";
 

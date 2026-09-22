@@ -1,5 +1,9 @@
-import { AnyTileBasicData, TileBasicData } from "../types";
-import { limitOf2Bytes, ObjectClass } from "../../../model/model-types";
+import {
+  AnyTileBasicData,
+  TileBasicData,
+  limitOf2Bytes,
+  ObjectClass,
+} from "../../../../../headless/primitives";
 // @ts-ignore
 import { earcut } from "../../../utils/geometry/earcut";
 import {

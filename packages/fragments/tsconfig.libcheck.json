@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "./src/FragmentsModels/src/**/*.ts",
+    "./src/Schema/**/*.ts",
+    "./src/Utils/**/*.ts",
+    "./src/Importers/IfcImporter/src/**/*.ts",
+    "./src/GeometryEngine/src/**/*.ts"
+  ],
+  "exclude": ["./src/**/*.test.ts", "./src/**/*.spec.ts", "./src/**/examples/**"]
+}

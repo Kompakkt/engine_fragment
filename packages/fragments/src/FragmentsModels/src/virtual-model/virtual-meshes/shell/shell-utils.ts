@@ -1,5 +1,5 @@
-import * as THREE from "three";
-import { normalizationValue } from "../types";
+import * as THREE from "../../../../../headless/math";
+import { normalizationValue } from "../../../../../headless/primitives";
 import {
   ShellProfile,
   Shell,

@@ -1,4 +1,4 @@
-import * as THREE from "three";
+import * as THREE from "../../../../../headless/math";
 import {
   CircleCurve,
   Axis,

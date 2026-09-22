@@ -1,11 +1,16 @@
 {
+  "name": "@kompakkt/fragments",
   "description": "Fragments is an open-source library designed to store, display, navigate, and edit massive amounts of BIM data with exceptional efficiency on any device.",
   "author": "That Open Company",
   "contributors": [
     "Antonio Gonzalez Viegas (https://github.com/agviegas)",
     "Juan Hoyos (https://github.com/HoyosJuan)"
   ],
-  "private": true,
+  "private": false,
+  "exports": {
+    ".": "./packages/fragments/src/headless/index.ts",
+    "./schema": "./packages/fragments/src/Schema/index.ts"
+  },
   "scripts": {
     "dev": "vite --host",
     "build-core": "yarn workspace @thatopen/fragments build",
@@ -29,6 +34,9 @@
   "workspaces": [
     "./packages/*"
   ],
+  "dependencies": {
+    "flatbuffers": "25.2.10"
+  },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
     "@thatopen/ui": "^3.1.0",
@@ -39,5 +47,5 @@
     "vite": "5.1.6",
     "vite-plugin-dts": "3.7.3"
   },
-  "version": "3.4.0"
+  "version": "3.4.7-kompakkt.1"
 }

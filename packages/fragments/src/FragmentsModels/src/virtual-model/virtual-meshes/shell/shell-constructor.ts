@@ -1,4 +1,4 @@
-import * as THREE from "three";
+import * as THREE from "../../../../../headless/math";
 import {
   Shell,
   ShellHole,
@@ -8,10 +8,13 @@ import {
   ShellType,
   BigShellHole,
 } from "../../../../../Schema";
-import { AnyTileData, TileData } from "../types";
+import {
+  AnyTileData,
+  TileData,
+  limitOf2Bytes,
+} from "../../../../../headless/primitives";
 import { DataSizes, PolygonSize, ShellHoleData } from "./types";
 import { ShellUtils } from "./shell-utils";
-import { limitOf2Bytes } from "../../../model/model-types";
 import { ShellFaceX } from "./shell-face-x";
 import { ShellFace4 } from "./shell-face-4";
 import { ShellFace3 } from "./shell-face-3";

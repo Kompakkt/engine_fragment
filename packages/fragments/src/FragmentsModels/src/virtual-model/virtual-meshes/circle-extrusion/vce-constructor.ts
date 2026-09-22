@@ -1,4 +1,4 @@
-import * as THREE from "three";
+import * as THREE from "../../../../../headless/math";
 import {
   Axis,
   AxisPartClass,
@@ -8,11 +8,15 @@ import {
   WireSet,
   FloatVector,
 } from "../../../../../Schema";
-import { normalizationValue, TileBasicData, TileData } from "../types";
+import {
+  normalizationValue,
+  TileBasicData,
+  TileData,
+  ObjectClass,
+} from "../../../../../headless/primitives";
 import { LinkPoint } from "./types";
 import { VceUtils } from "./vce-utils";
 import { VceCasterUtils } from "./vce-caster-utils";
-import { ObjectClass } from "../../../model/model-types";
 
 export class VceConstructor {
   private readonly _minLinkDistance = 1 / 100000000;

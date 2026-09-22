@@ -1,4 +1,4 @@
-import * as THREE from "three";
+import * as THREE from "../../../../../headless/math";
 
 import {
   Axis,
@@ -8,7 +8,7 @@ import {
   CircleExtrusion,
 } from "../../../../../Schema";
 import { VceCasterUtils } from "./vce-caster-utils";
-import { limitOf2Bytes } from "../../../model/model-types";
+import { limitOf2Bytes } from "../../../../../headless/primitives";
 
 type AxisPartData = {
   indices: number;
