@@ -88,7 +88,7 @@ function isRawBuffer(bytes: Uint8Array): boolean {
 }
 
 async function inflateZlib(bytes: Uint8Array): Promise<Uint8Array> {
-  const stream = new Blob([bytes])
+  const stream = new Blob([bytes as BlobPart])
     .stream()
     .pipeThrough(new DecompressionStream("deflate"));
   const buffer = await new Response(stream).arrayBuffer();
