@@ -81,6 +81,10 @@ export class IfcImporter {
       { forRelated: "HasAssociations", forRelating: "AssociatedTo" },
     ],
     [
+      WEBIFC.IFCRELASSOCIATESCLASSIFICATION,
+      { forRelated: "HasClassifications", forRelating: "Classifies" },
+    ],
+    [
       WEBIFC.IFCRELAGGREGATES,
       { forRelated: "Decomposes", forRelating: "IsDecomposedBy" },
     ],
