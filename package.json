@@ -9,7 +9,8 @@
   "private": false,
   "exports": {
     ".": "./packages/fragments/src/headless/index.ts",
-    "./schema": "./packages/fragments/src/Schema/index.ts"
+    "./schema": "./packages/fragments/src/Schema/index.ts",
+    "./ifc-importer": "./packages/fragments/src/Importers/IfcImporter/index.ts"
   },
   "scripts": {
     "dev": "vite --host",
