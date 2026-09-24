@@ -313,6 +313,13 @@ export const ifcRelationsMap = new Map<
     },
   ],
   [
+    WEBIFC.IFCRELASSOCIATESCLASSIFICATION,
+    {
+      forRelating: "Classifies",
+      forRelated: "HasClassifications",
+    },
+  ],
+  [
     WEBIFC.IFCRELASSOCIATESLIBRARY,
     {
       forRelating: "LibraryInfoForObjects",

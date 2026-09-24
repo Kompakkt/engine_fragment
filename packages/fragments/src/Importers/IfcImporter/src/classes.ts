@@ -6,6 +6,12 @@ export const ifcClasses = {
     WEBIFC.IFCSITE,
     WEBIFC.IFCBUILDING,
     WEBIFC.IFCBUILDINGSTOREY,
+    // Classification systems and references are needed so that elements can
+    // expose their classification identifications
+    // (IfcRelAssociatesClassification -> IfcClassificationReference ->
+    // IfcClassification).
+    WEBIFC.IFCCLASSIFICATION,
+    WEBIFC.IFCCLASSIFICATIONREFERENCE,
     // IFC4x3 alignment layout entities, imported as data so they appear in the
     // spatial structure (issue #743). Their geometry is still handled
     // separately (saved as lines); these are the semantic items, to be linked
